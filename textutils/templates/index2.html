@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textutils</title>
+</head>
+<body>
+    <h1>HOME PAGE</h1>
+    <p>this is a simple template used for testing</p>
+    <p>we are tryig to access the params from django</p>
+    <h1>{{name}} lives in {{place}}</h1>
+    <form action="/analyze" method="get" style="display: flex;flex-direction: column;">
+        <textarea name="details" id="detials" style="display: flex; font-size: 20px; width: 886px; height: 271px;"></textarea>
+        <div style="display: flex;">
+            <input type="checkbox" name="removepunc">Remove Punctuations?
+        </div>
+        <div style="display: flex;">
+            <input type="checkbox" name="fullcaps">Capitalize?
+        </div>
+        <div style="display: flex;">
+            <input type="checkbox" name="newlineremove">New Line Remover?
+        </div>
+        <div style="display: flex;">
+            <input type="checkbox" name="extraspaceremove">Extra Space Remover?
+        </div>
+        <div style="display: flex;">
+            <input type="checkbox" name="charcount">Characters counter?
+        </div>
+        <button type="submit" style="width: 150px;">Analyze Text</button>
+    </form>
+</body>
+</html>
